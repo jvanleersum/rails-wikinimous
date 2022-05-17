@@ -1,0 +1,8 @@
+<h1><%= @article.title %></h1>
+
+<h4>Content</h4>
+<p><%= @article.content %></p>
+
+<%= link_to "Update acticle", edit_article_path(@article) %>
+<br>
+<%= link_to "Back to all articles", articles_path %>
