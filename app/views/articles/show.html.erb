@@ -1,8 +1,13 @@
-<h1><%= @article.title %></h1>
+<div class="container">
+	<div class='article-title'>
+		<h1><%= @article.title %></h1>
+		<h1><%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe, edit_article_path(@article) %></h1>
+	</div>
 
-<h4>Content</h4>
-<p><%= @article.content %></p>
+	<h4>Content</h4>
+	<p><%= @article.content %></p>
 
-<%= link_to "Update acticle", edit_article_path(@article) %>
-<br>
-<%= link_to "Back to all articles", articles_path %>
+	
+	<br>
+	<%= link_to "Back to all articles", articles_path, class: "btn-back" %>
+</div>

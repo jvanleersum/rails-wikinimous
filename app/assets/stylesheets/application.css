@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ @import "./fontawesome/scss/fontawesome.scss";
+
+body {
+  margin: 0px;
+}
+
+nav {
+  background-color: lightgray;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px
+}
